@@ -1,0 +1,489 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200208.141709.103.0.001.json",
+    "dumpEventTime": "2020-02-08T14:17:09Z",
+    "dumpEventTimeStamp": "1581189429095",
+    "processId": 103,
+    "cwd": "/Users/jasonmullings/Desktop/algorithm-practice",
+    "commandLine": [
+      "node",
+      "practice.js"
+    ],
+    "nodejsVersion": "v12.9.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "12.9.1",
+      "v8": "7.6.303.29-node.15",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.9.1/node-v12.9.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.9.1/node-v12.9.1.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.2.0",
+    "osVersion": "Darwin Kernel Version 19.2.0: Sat Nov  9 03:47:04 PST 2019; root:xnu-6153.61.1~20/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz",
+        "speed": 1600,
+        "user": 171148870,
+        "nice": 0,
+        "sys": 108518110,
+        "idle": 548326090,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz",
+        "speed": 1600,
+        "user": 54067080,
+        "nice": 0,
+        "sys": 36805580,
+        "idle": 737001510,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz",
+        "speed": 1600,
+        "user": 165608730,
+        "nice": 0,
+        "sys": 81578540,
+        "idle": 580692380,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8210Y CPU @ 1.60GHz",
+        "speed": 1600,
+        "user": 46313000,
+        "nice": 0,
+        "sys": 29853550,
+        "idle": 751707460,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "38:f9:d3:2f:cb:ac",
+        "address": "fe80::1437:e6df:ffe9:42e8",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "38:f9:d3:2f:cb:ac",
+        "address": "192.168.0.11",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "46:3d:b7:fe:4a:ef",
+        "address": "fe80::443d:b7ff:fefe:4aef",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 11
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "46:3d:b7:fe:4a:ef",
+        "address": "fe80::443d:b7ff:fefe:4aef",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::5f12:b3ce:7274:b13",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::7257:5f23:8e11:417",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "utun2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::d7f8:2c3c:9b19:3042",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      },
+      {
+        "name": "utun3",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::d2ac:77d2:64b0:846c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 16
+      },
+      {
+        "name": "utun4",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::bdd0:6cdb:cf99:6f1e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 17
+      },
+      {
+        "name": "utun5",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::67ca:695f:2306:716e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      },
+      {
+        "name": "utun6",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::25c7:e5d8:28eb:101f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 19
+      },
+      {
+        "name": "utun7",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::ac58:c316:e2cf:b1fd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 20
+      },
+      {
+        "name": "en3",
+        "internal": false,
+        "mac": "ac:de:48:00:11:22",
+        "address": "fe80::aede:48ff:fe00:1122",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      }
+    ],
+    "host": "Jasons-MacBook-Air.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000100145b9c",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100078d1b",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010016e2a7",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010016e243",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001002f18b5",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001002f2fdd",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001002efd96",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001002edcec",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001002f93c4",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001002f943f",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001002c79e7",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001005e8217",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100927b99",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2151743488,
+    "totalCommittedMemory": 2149963984,
+    "usedMemory": 2146058968,
+    "availableMemory": 48293312,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 31744,
+        "capacity": 261832,
+        "used": 31432,
+        "available": 230400
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1160008,
+        "capacity": 1047328,
+        "used": 110264,
+        "available": 937064
+      },
+      "old_space": {
+        "memorySize": 2148380672,
+        "committedMemory": 2148215520,
+        "capacity": 2145535984,
+        "used": 2145529272,
+        "available": 6712
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 235584,
+        "capacity": 192064,
+        "used": 192064,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 271976,
+        "capacity": 192480,
+        "used": 192480,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 255.59,
+    "kernelCpuSeconds": 19.6289,
+    "cpuConsumptionPercent": 125.671,
+    "maxRss": 2331240300544,
+    "pageFaults": {
+      "IORequired": 97,
+      "IONotRequired": 827433
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "USER": "jasonmullings",
+    "PATH": "/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin:/Users/jasonmullings/.rbenv/shims:/Users/jasonmullings/.rbenv/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin:/Users/jasonmullings/.rbenv/shims:/Users/jasonmullings/.rbenv/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin",
+    "LOGNAME": "jasonmullings",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.iVq0oMjwFv/Listeners",
+    "HOME": "/Users/jasonmullings",
+    "SHELL": "/bin/zsh",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "TMPDIR": "/var/folders/2q/_18bphbx6wg8z1vf_5kb9qlc0000gn/T/",
+    "XPC_SERVICE_NAME": "0",
+    "XPC_FLAGS": "0x0",
+    "LESS": "-R",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "NVM_BIN": "/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin",
+    "NVM_CD_FLAGS": "-q",
+    "NVM_DIR": "/Users/jasonmullings/.nvm",
+    "OLDPWD": "/Users/jasonmullings/Desktop/algorithm-practice",
+    "PAGER": "less",
+    "PWD": "/Users/jasonmullings/Desktop/algorithm-practice",
+    "RBENV_SHELL": "zsh",
+    "SHLVL": "1",
+    "ZSH": "/Users/jasonmullings/.oh-my-zsh",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.41.1",
+    "LANG": "en_US.UTF-8",
+    "COLORTERM": "truecolor",
+    "TERM": "xterm-256color",
+    "_": "/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 10240,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1392,
+      "hard": 2088
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/jasonmullings/.nvm/versions/node/v12.9.1/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
