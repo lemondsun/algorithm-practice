@@ -1,4 +1,4 @@
-..// create a function that removes all the vowels from a string and replaces them with an *
+// create a function that removes all the vowels from a string and replaces them with an *
 
 // 1 create variable with vowels to check against array
 // 2 first create array from argument
