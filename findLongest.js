@@ -5,6 +5,9 @@
  * @param {array} array 
  */
 
-const findLongest = (array) =>  array.reduce((a,b) => (a.toString().length > b.toString().length) ? a : b)
+const findLongest = (array) => {
+  return array.reduce((a, b) => (a.toString().length > b.toString().length && a.toString().length !== b.toString().length) ?
+    a : b)
+}
 
-console.log(findLongest([1, 10, 100]))
+console.log(findLongest([8, 900, 500]))
