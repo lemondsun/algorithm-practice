@@ -7,7 +7,7 @@
 
 const sameFrequency = (numOne, numTwo) => {
   // first check to make sure that both numbers  are the  same length
-  if (numOne.length !== numTwo.length) return null;
+  if (Array.from(String(numOne)).length !==  Array.from(String(numTwo)).length) return false;
 
   // make two variables to save the numbers and their count from each param
   let arg1Count = {}
@@ -37,4 +37,4 @@ const sameFrequency = (numOne, numTwo) => {
   return  true
 }
 
-console.log(sameFrequency(185,281))
+console.log(sameFrequency(22,222))
