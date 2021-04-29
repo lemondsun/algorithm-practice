@@ -4,7 +4,7 @@ let binarySearch = (array, value) => {
   let divideAndCheck = (theArray) => {
     let variableLeft = []
     let variableRight = []
-
+ 
     array.map((x, i) => {
       i <= Math.round(theArray.length / 2) ?
         variableLeft.push(x)
