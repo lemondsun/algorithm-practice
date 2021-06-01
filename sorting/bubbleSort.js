@@ -16,8 +16,8 @@ const swap = (arr, index1, index2) => {
 let testArray = [5, 19, 6, 99, 40, 39, 58]
 
 const bubbleSort = (arr) => {
-
   for (let i = 0; i < arr.length; i++) {
+
     if (arr[i]>arr[i+1]) {
   swap(arr,i,i+1)
 }
