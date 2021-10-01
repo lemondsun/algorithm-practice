@@ -23,7 +23,6 @@ const bubbleSort = (arr) => {
 }
   }
 
+  return arr
 }
-bubbleSort(testArray)
-
-console.log(testArray)
+console.log(bubbleSort(testArray))
