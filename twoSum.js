@@ -41,3 +41,14 @@ var twoSum = function (nums, target) {
   }
   return ans
 };
+
+const newTwoSum = (nums, target) => {
+  ans = [];
+  nums.map((x, i) => {
+    nums.map((a, n) => {
+      i !== n && x + a === target && ans.length !==2 && ans.push(i, n)
+    })
+  })
+  return ans
+}
+console.log(newTwoSum([3,2,4],6))
