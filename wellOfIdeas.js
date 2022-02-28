@@ -19,3 +19,6 @@ const well = (ideas) => {
 }
 
 console.log(well(['bad', 'bad', 'bad']))
+
+
+
