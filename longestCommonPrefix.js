@@ -2,24 +2,42 @@
  * @param {string[]} strs
  * @return {string}
  */
-const longestCommonPrefix = (strs) => {
-  if(strs.length == 0) {
-    return "";
-}
-
-//save first word from the array
-  let str = strs[0];
-
-
-   for (const word of strs) {
-        while (word.indexOf(str) != 0) {
-            str = str.substring(0, str.length - 1);              // remove one character from the end
-            if (str === "")
-                break;
-        }
+ const longestCommonPrefix = (strs) => {
+  prefixsCounter = {}
+  highestCount = 0;
+  highestPrefix = '';
+  //save first 2, 3, 4 letter combination of the words 
+  //even if the prefix is a double it only returns a count of one bc each new time replaces the last
+  strs.map((x) => {
+      prefixsCounter[x.substring(0)] = 0
+      prefixsCounter[x.substring(0, 2)] = 0
+      prefixsCounter[x.substring(0, 3)] = 0
+    prefixsCounter[x.substring(0, 4)] = 0
+  })
+  //now that all the prefixs are saved loop through the  words again
+  //this time raise the count if the prefixs match
+  strs.map((x) => {
+    for (const prefix in prefixsCounter) {
+      if (prefix === x.substring(0, 4)) {
+        prefixsCounter[prefix] += 1
+      } else if (prefix === x.substring(0, 3)) {
+        prefixsCounter[prefix] += 1
+      } else if (prefix === x.substring(0, 2)) {
+        prefixsCounter[prefix] += 1
+      }else if (prefix === x.substring(0)) {
+        prefixsCounter[prefix] += 1
+      }
     }
-    return str;
+  });
+  //loop through the object and save the highest valued key
+  for (const prefix in prefixsCounter) {
+    if (prefixsCounter[prefix] > highestCount) {
+      highestPrefix = prefix
+      highestCount = prefixsCounter[prefix] 
+    }
+  }
+  return highestPrefix
 };
 
 
-console.log(longestCommonPrefix(["flooo","flow","flight"]))
+console.log(longestCommonPrefix(["a","ab"]))
