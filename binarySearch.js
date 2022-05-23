@@ -1,28 +1,5 @@
 let binarySearch = (array, value) => {
-  // let ans = []
-
-  // let divideAndCheck = (theArray) => {
-  //   let variableLeft = []
-  //   let variableRight = []
- 
-  //   array.map((x, i) => {
-  //     i <= Math.round(theArray.length / 2) ?
-  //       variableLeft.push(x)
-  //       :
-  //       variableRight.push(x)
-  //   })
-
-  //   if (variableLeft[variableLeft.length - 1] === value)
-  //   {
-  //     ans.push(variableLeft[variableLeft.length - 1])
-  //     return;
-  //   }
-  //   variableLeft[variableLeft.length - 1] < value ?
-  //     divideAndCheck(variableRight)
-  //     :
-  //     divideAndCheck(variableLeft)
-  // }
-  
+//create a pointer for the start of the array
   let left = 0;
   let right = array.length - 1;
   let middle = Math.floor(array.length / 2);
