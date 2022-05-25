@@ -30,7 +30,6 @@ for (let i = 9; i >= 0;i--) {
       walk[i] === 's' && directions.n--;
       walk[i] === 'w' && directions.e--;
       walk[i] === 'e' && directions.w--;
-  
   };
 //to end where I began each direction needs to be countered
   //so there should be 0 in every direction count
