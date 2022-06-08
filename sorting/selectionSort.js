@@ -31,4 +31,5 @@ const selectionSort = (arr) => {
 return arr
 }
 
+
 console.log(selectionSort([0,23,34,22,10,19,17]))
