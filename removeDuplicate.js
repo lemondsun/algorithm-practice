@@ -1,17 +1,21 @@
-const removeDuplicate = (arr) => {
-  let trackingNumber = arr[0];
-  let returnArr = [arr[0]];
+const removeDuplicate = (nums) => {
+  let trackingNumber = nums[0];
+  let unqNum = [nums[0]];
+  let numsL = nums.length;
 
-  arr.map((x, i) => {
+  nums.map((x) => {
     if (x !== trackingNumber) {
-      returnArr.push(x)
+      unqNum.push(x)
       trackingNumber = x
     }
   });
 
-  for (let i = returnArr.length; i < arr.length;i++) returnArr.push('_')
+  for (let i = 0; i < numsL; i++){
+    nums.pop()
+  };
+  unqNum.map((x) => nums.push(x));
 
-  return returnArr
+  return nums
 };
 
-console.log(removeDuplicate([1,1,2]))
+console.log(removeDuplicate([0,0,1,1,1,2,2,3,3,4]))
