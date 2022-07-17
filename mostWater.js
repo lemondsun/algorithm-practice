@@ -20,4 +20,20 @@ const maxArea = (height) => {
   return heighestArea;
 };
 
-console.log(maxArea([1,1]));
+console.log(maxArea([1, 1]));
+
+{
+  /** solution w less lines and better performance */
+
+  const maxArea = (h) => {
+    let ans = 0,
+      i = 0,
+      j = h.length - 1;
+
+    while (i < j) {
+      ans = Math.max(ans, Math.min(h[i], h[j]) * (j - i));
+      h[i] <= h[j] ? i++ : j--;
+    }
+    return ans;
+  };
+}
